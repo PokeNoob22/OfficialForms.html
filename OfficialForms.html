@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for signing up for our basketball program</p>
+
+  <form id="survey-form" action="#">
+    
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label id="number-label" for="number">Age (optional):</label>
+    <input type="number" id="number" placeholder="Enter your age" min="1" max="120">
+
+    <label for="dropdown">Which option best describes your current role?</label>
+    <select id="dropdown">
+      <option value="student">Student</option>
+      <option value="full-time-job">Full Time Job</option>
+      <option value="other">Other</option>
+    </select>
+
+    <fieldset>
+      <legend>How many years have you been playing basketball?</legend>
+      <label><input type="radio" name="experience" value="oneYear"> Under 1 year</label>
+      <label><input type="radio" name="experience" value="twoFourYears"> 2-4 years</label>
+      <label><input type="radio" name="experience" value="fiveOrMore"> 5 years or more</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What level of competition ahve you competed at? (Check all that apply)</legend>
+      <label><input type="checkbox" name="level" value="GradeSchool"> Grade School</label>
+      <label><input type="checkbox" name="level" value="High-school"> High-school</label>
+      <label><input type="checkbox" name="level" value="College"> College</label>
+    </fieldset>
+
+    <label for="comments">Any sickness or condition I should know about?</label>
+    <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
